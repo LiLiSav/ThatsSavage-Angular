@@ -10,6 +10,11 @@ export class ContactUsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
+  sendEmail(){
+    console.log("button clicked")
+  };
 
 }

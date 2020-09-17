@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,20 @@ import { AboutUsComponent } from './about-us/about-us.component';
     FooterComponent,
     ContactUsComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RecaptchaV3Module,
   ],
-  providers: [],
+  exports:[
+    RecaptchaV3Module,
+  ],
+  providers: [
+  { provide: RECAPTCHA_V3_SITE_KEY, useValue: '6Leho8QZAAAAABEYI32nzn9hhzqLR2EDyOw6tOjx' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

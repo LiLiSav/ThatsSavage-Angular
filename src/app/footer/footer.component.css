@@ -1,10 +1,24 @@
-.fa-facebook {
-  color: #3b5998;
-}
-.fa-twitter {
-  color: #0099CC;
-}
-.fa-linkedin {
-  color: #0976b4;
+.btn{
+  color: white;
+  border: none;
+  width: 80px;
+  height:80px;
+  margin: 3px;
+  border-radius: 50%;
 }
 
+.btn-f {
+  background-color: #3b5998;
+
+}
+.btn-i {
+  background-color: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.btn-l {
+  background-color: #0976b4;
+}
+
+.btn:hover{
+  opacity: 0.2;
+}

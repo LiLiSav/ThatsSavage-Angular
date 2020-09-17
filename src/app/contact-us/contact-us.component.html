@@ -1,4 +1,4 @@
-<div class="container bg-secondary card shadow p-5">
+<div class="container bg-secondary card shadow p-3 mb-2">
   <h4 class="display-4 text-weight-bolder text-warning">Contact Us</h4>
   <div class="contactUs text-warning font-weight-bold ">
     <form>
@@ -25,6 +25,13 @@
         <textarea class="form-control" id="commentText" rows="3"></textarea>
       </div>
     </form>
+    <div>
+      <button class="btn btn-warning my-2 my-md-2" type="submit" onclick="sendEmail()">Send</button>
+    </div>
+    <!--<div>
+      <re-captcha (resolved)="resolved($event)" siteKey="6Leho8QZAAAAABEYI32nzn9hhzqLR2EDyOw6tOjx"></re-captcha>
+    </div>-->
+
 
   </div>
 </div>
